@@ -1,0 +1,46 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family:cursive;
+    font-weight: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right,rgb(0, 140, 255),rgb(13, 204, 61));
+}
+.calc{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-rows:minmax(75px,auto) repeat(5,70px);
+    grid-template-columns: repeat(4,70px);
+}
+.calc button{
+    color: white;
+    cursor:pointer;
+    font-size: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background-color:rgba(2, 2, 2, 0.2);
+}
+.calc button:hover{
+    background-color: rgba(22, 240, 211, 0.73);
+}
+.span-two{
+    grid-column: span 2;
+}
+.output{
+    grid-column:1/-1 ;
+}
+#screen{
+   color:rgba(248, 248, 248, 0.85);
+   grid-column: span 4;
+   height: 75px;
+   background-color:rgba(0, 0, 0, .5);
+   font-size: 25px;
+   text-align: end;
+   padding-right: 10px;
+   border: solid 1.6px;
+   pointer-events: none;
+}
