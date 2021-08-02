@@ -1,6 +1,10 @@
 *,*::before,*::after{
     box-sizing: border-box;
-    font-family:cursive;
+    font-family:'Source Sans Pro', sans-serif;
+    
+    
+    
+    
     font-weight: normal;
 }
 body{
